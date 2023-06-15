@@ -9,7 +9,7 @@ body {
 }
 
 main {
-  height: 100vh;
+  height: 93vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -76,4 +76,20 @@ main {
   gap: 1rem;
   height: 80%;
   width: 100%;
+}
+footer {
+  padding: 0.4rem 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer p,
+a {
+  color: ghostwhite;
+  font-weight: bold;
+  font-size: 1.6rem;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 2px 2px 3px black;
+  letter-spacing: 0.2rem;
 }
