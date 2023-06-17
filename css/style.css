@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
 }
 
 body {
@@ -16,14 +17,20 @@ main {
   flex-wrap: wrap;
 }
 
+.game-area {
+  /* background-color: blue; */
+  padding: 1rem;
+}
+
 .number-list {
   width: 40rem;
   height: auto;
-  /*  background-color: blue; */
-  display: grid;
-  grid-template-columns: auto auto auto;
+  /*   background-color: yellow; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  align-items: center;
+  gap: 2rem;
   padding: 1rem;
 }
 
@@ -38,12 +45,31 @@ main {
   padding: 0.5rem;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 [type="text"] {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+.button-style {
+  font-family: "Ubuntu", sans-serif;
+  width: 7rem;
+  font-size: 1.8rem;
+  padding: 0.3rem 0;
+  margin: 0 auto;
+  border: none;
+  background-color: ghostwhite;
+  color: #283618;
+  border-radius: 25px;
+}
+
+.button-style:hover {
+  cursor: pointer;
+  background-color: #283618;
+  color: ghostwhite;
 }
 
 .clock-style {

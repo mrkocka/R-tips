@@ -4,32 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
     <main>
-      <article class="number-list">
-        <div class="list-item">1</div>
-        <div class="list-item">3</div>
-        <div class="list-item">5</div>
-        <div class="list-item">2</div>
-        <div class="list-item">4</div>
-        <input class="list-item" type="text" />
+      <article class="game-area">
+        <form action="#" class="number-list" id="myForm">
+          <div class="list-item">1</div>
+          <div class="list-item">3</div>
+          <div class="list-item">5</div>
+          <div class="list-item">2</div>
+          <div class="list-item">4</div>
+          <input
+            class="list-item"
+            type="text"
+            maxlength="1"
+            id="userInput"
+            required
+          />
+          <input type="submit" value="Tipp" class="button-style" />
+        </form>
       </article>
       <article class="tips-list">
-        <div class="clock-style">00:00</div>
-        <div id="wrong-answers" class="wrong-answers-style">
-          <p>1</p>
-          <p>6</p>
-          <p>8</p>
-          <p>r</p>
-          <p>e</p>
+        <div class="clock-style">
+          <span id="minutes">00</span>:<span id="seconds">00</span>
         </div>
+        <div id="wrong-answers" class="wrong-answers-style"></div>
       </article>
     </main>
     <footer>
       <img src="#" alt="logo" />
+      <button id="startButton">Start</button>
       <p>by <a href="#">mr.kocka</a></p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
