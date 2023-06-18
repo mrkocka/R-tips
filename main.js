@@ -36,8 +36,43 @@ document.getElementById("myForm").addEventListener("submit", function (event) {
   } else {
     alert("Helyes válasz!");
   }
+  if (wrongAnswers.length == 3) {
+    alert("Nem szám kell hanem betű! ");
+  }
+  if (wrongAnswers.length == 8) {
+    alert("Nagyon sok van belőle");
+  }
+
+  if (wrongAnswers.length == 10) {
+    alert("Te is legalább egyszer utaztál vele");
+  }
+
+  if (wrongAnswers.length == 15) {
+    alert("Amerikai játékosok hátrányban lennének.");
+  }
+
+  if (wrongAnswers.length == 18) {
+    alert("Irányt és fordulatott is jelölhet");
+  }
+
   if (wrongAnswers.length == 20) {
     alert("GAME OVER!");
     location.reload();
   }
 });
+
+function egyperc() {
+  alert("Ez ha úgy vesszük nem is logikai feladat.");
+}
+
+function kettoperc() {
+  alert("Biztos hogy láttál már ilyet, akár minden nap...");
+}
+
+function haromperc() {
+  alert("Általában rárakják a kezüket az emberek");
+}
+
+setTimeout(egyperc, 60000); // 60000 milliszekundum = 1 perc
+setTimeout(kettoperc, 120000);
+setTimeout(haromperc, 180000);
